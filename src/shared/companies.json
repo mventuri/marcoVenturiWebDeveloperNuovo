@@ -1,0 +1,38 @@
+[
+  {
+    "company": "Sourcesense",
+    "date": "May 2018 - current",
+    "jobTitle": "Programmer Analyst - Scrum Master",
+    "jobDetails": "In 2018, I joined Sourcesense and deepened my Frontend and Agile skills.",
+    "skills": "Skills:HTML5, CSS3, JS, JQuery, Atlassian Jira Administrator (certified), Atlassian Confluence Administrator (certified)",
+    "avatar": "../Images/sourcesense.png",
+    "coverImage": "https://media-exp1.licdn.com/dms/image/C4D22AQGTKjOFFmjakw/feedshare-shrink_2048_1536/0?e=1587600000&v=beta&t=yiotLzu2w8f3yPYRmYo-pBGce_EfajRWc2PaW2JYwsc"
+  },
+  {
+    "company": "Marco Venturi - Web Developer",
+    "date": "Feb 2015 - May 2018",
+    "jobTitle": "Freelance Web Developer",
+    "jobDetails": "In 2015, thanks to my passion for the internet and coding, I started my new adventure as a web developer.",
+    "skills": "HTML5, CSS3, JS, Bootstrap, Negotiatios, Customer Satisfaction, AngularJs",
+    "avatar": "./../Images/sourcesense.png",
+    "coverImage": "https://media-exp1.licdn.com/dms/image/C4D22AQGTKjOFFmjakw/feedshare-shrink_2048_1536/0?e=1587600000&v=beta&t=yiotLzu2w8f3yPYRmYo-pBGce_EfajRWc2PaW2JYwsc"
+  },
+  {
+    "company": "TheSitComPost",
+    "date": "Jun 2011 - May 2018",
+    "jobTitle": "Founder",
+    "jobDetails": "My most successful ecommerce, where I mix my social media marketing and enterpreneurship skills. I partner with industry's most important players as an affliate marketer.",
+    "skills": "Negotiation, Affiliate Marketing, Market Analysis, Customer Satisfaction, Enterpreneurship",
+    "avatar": "../Images/sourcesense.png",
+    "coverImage": "https://media-exp1.licdn.com/dms/image/C4D22AQGTKjOFFmjakw/feedshare-shrink_2048_1536/0?e=1587600000&v=beta&t=yiotLzu2w8f3yPYRmYo-pBGce_EfajRWc2PaW2JYwsc"
+  },
+  {
+    "company": "Butler Hill Group",
+    "date": "Apr 2011 - Jun 2011",
+    "jobTitle": "Web Search Engine Evaluator",
+    "jobDetails": "My job was all about Web search evaluation using an excel spreadsheet and an annotation tool, Reviewing and rating web content associated with specific search queries, using a web application to support the measurement of search data relevance and evaluating online search results according to detailed criteria.",
+    "skills": "Working Remotely, Deadlines, Management, Stress Management, SEO",
+    "avatar": "../Images/sourcesense.png",
+    "coverImage": "https://media-exp1.licdn.com/dms/image/C4D22AQGTKjOFFmjakw/feedshare-shrink_2048_1536/0?e=1587600000&v=beta&t=yiotLzu2w8f3yPYRmYo-pBGce_EfajRWc2PaW2JYwsc"
+  }
+]

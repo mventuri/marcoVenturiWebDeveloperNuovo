@@ -1,0 +1,32 @@
+[
+  {
+    "certification": "Professional Scrum Master I - PSMI",
+    "issuedBy": "Scrum.org",
+    "date": "Oct 2018",
+    "initial": "SM"
+  },
+  {
+    "certification": "Atlassian Jira Certified Admin",
+    "issuedBy": "Atlassian",
+    "date": "Jun 2018",
+    "initial": "JA"
+  },
+  {
+    "certification": "Atlassian Confluence Certified Admin",
+    "issuedBy": "Atlassian",
+    "date": "May 2018",
+    "initial": "CA"
+  },
+  {
+    "certification": "Full Stack Web Development Specialization",
+    "issuedBy": "The Hong Kong University of Science and Technology",
+    "date": "Jan 2020",
+    "initial": "FS"
+  },
+  {
+    "certification": "Android Basics by Google Nanodegree Program",
+    "issuedBy": "Udacity and Google",
+    "date": "May 2018",
+    "initial": "AB"
+  }
+]

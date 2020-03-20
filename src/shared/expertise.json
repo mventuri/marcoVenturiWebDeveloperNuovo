@@ -1,0 +1,14 @@
+[
+  { "skills": "#Frontend", "initial": "F" },
+  { "skills": "#Agile", "initial": "A" },
+  { "skills": "#Scrum", "initial": "S" },
+  { "skills": "#Kanban", "initial": "K" },
+  { "skills": "#ProjectManagement", "initial": "PM" },
+  { "skills": "#Trainer", "initial": "T" },
+  { "skills": "#Jira", "initial": "J" },
+  { "skills": "#Confluence", "initial": "C" },
+  { "skills": "#Git", "initial": "G" },
+  { "skills": "#Gitflow", "initial": "GF" },
+  { "skills": "#WordPress", "initial": "WP" },
+  { "skills": "#Trello", "initial": "T" }
+]
