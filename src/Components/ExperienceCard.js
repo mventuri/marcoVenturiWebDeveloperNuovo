@@ -71,7 +71,7 @@ class CardExperience extends React.Component {
           />
           <CardContent>
             <Typography variant="body2" color="textSecondary" component="p">
-              {profile.jobTitle}
+              <h4>{profile.jobTitle}</h4>
             </Typography>
           </CardContent>
           <CardActions disableSpacing>
@@ -153,9 +153,7 @@ function CustomizedDialogs({ currentJob }) {
           {currentJob.company}
         </DialogTitle>
         <DialogContent dividers>
-          <Typography gutterBottom>
-            {currentJob.jobDetails} <br /> <b>Skills: {currentJob.skills}</b>
-          </Typography>
+          <Typography gutterBottom>{currentJob.jobDetails}</Typography>
         </DialogContent>
       </Dialog>
     </div>
