@@ -50,7 +50,7 @@ export default function AboutMeText() {
             </Grid>
             <Grid item xs={12}>
               <Typography>
-                <h1>Countries I've been working or made business with</h1>
+                <h1>Countries I've been working or did business with</h1>
                 <i className="countries">(...in blue)</i>
               </Typography>
             </Grid>
