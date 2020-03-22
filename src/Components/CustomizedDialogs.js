@@ -54,7 +54,6 @@ const DialogActions = withStyles(theme => ({
 }))(MuiDialogActions);
 
 export default function CustomizedDialogs({ currentJob }) {
-  console.log("qui", currentJob);
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = props => {

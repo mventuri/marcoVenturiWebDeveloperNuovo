@@ -5,7 +5,7 @@
 .App-header {
   background-color: #282c34;
   background-image: url("./Images/header.jpeg");
-  min-height: 70vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,9 +14,9 @@
   color: white;
 }
 
-.App-header h1 {
+/* .App-header h1 {
   padding-top: 70px;
-}
+} */
 
 .myFooter {
   background-color: #000;
