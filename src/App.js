@@ -8,13 +8,10 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <div className="App">
-      <Grid container>
-        <Grid item xs={12}>
-          <header className="App-header">
-            <h1>Marco Venturi</h1>
-          </header>
-        </Grid>
-      </Grid>
+      <header className="App-header">
+        <h1>Marco Venturi</h1>
+        <span>Portfolio website</span>
+      </header>
       <Grid container>
         <AboutMeText />
         <Experience />

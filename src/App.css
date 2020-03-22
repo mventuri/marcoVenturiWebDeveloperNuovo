@@ -14,6 +14,10 @@
   color: white;
 }
 
+.App-header h1 {
+  padding-top: 70px;
+}
+
 .myFooter {
   background-color: #000;
   color: #fff;
