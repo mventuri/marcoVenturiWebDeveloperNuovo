@@ -23,7 +23,7 @@ const styles = theme => ({
 
 const DialogTitle = withStyles(styles)(props => {
   const { children, classes, onClose, ...other } = props;
-  console.log(props)
+  console.log(props);
   return (
     <MuiDialogTitle disableTypography className={classes.root} {...other}>
       <Typography variant="h6">{children}</Typography>
@@ -58,12 +58,25 @@ function CustomizedDialogs({ currentJob }) {
         aria-labelledby="customized-dialog-title"
         open={open}
       >
-        <DialogTitle id="customized-dialog-title" onClose={() => setOpen(!open)}>
+        <DialogTitle
+          id="customized-dialog-title"
+          onClose={() => setOpen(!open)}
+        >
           <div>
-            <img src={currentJob.avatar} alt="" style={{width: '40px', height: '40px', top: '1px', position: 'relative'}}/>
-            <span style={{position: 'absolute', top: '23px', left: '60px'}}>{currentJob.company}</span>
+            <img
+              src={currentJob.avatar}
+              alt=""
+              style={{
+                width: "40px",
+                height: "40px",
+                top: "1px",
+                position: "relative"
+              }}
+            />
+            <span style={{ position: "absolute", top: "23px", left: "70px" }}>
+              {currentJob.company}
+            </span>
           </div>
-
         </DialogTitle>
         <DialogContent className="modalText" dividers>
           <Typography gutterBottom>{currentJob.jobDetails}</Typography>
@@ -73,4 +86,4 @@ function CustomizedDialogs({ currentJob }) {
   );
 }
 
-export default CustomizedDialogs
+export default CustomizedDialogs;

@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import uuid from 'uuid'
+import React from "react";
+import uuid from "uuid";
 import companies from "../shared/companies.json";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
@@ -15,11 +15,13 @@ import CustomizedDialogs from "./CustomizedDialogs";
 const getData = companies;
 
 function CompaniesCard() {
-  return <React.Fragment>
-    {getData.map(profile => (
-      <CardExperience key={uuid()} profilo={profile} />
-    ))}
-  </React.Fragment>
+  return (
+    <React.Fragment>
+      {getData.map(profile => (
+        <CardExperience key={uuid()} profilo={profile} />
+      ))}
+    </React.Fragment>
+  );
 }
 
 function CardExperience({ profilo }) {
@@ -72,5 +74,4 @@ function CardExperience({ profilo }) {
   );
 }
 
-
-export default CompaniesCard
+export default CompaniesCard;

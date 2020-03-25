@@ -1,17 +1,17 @@
 .myFooter {
-  background-color: #6200EE;
+  background-color: #546e7a;
   color: #ffffff;
   min-height: 80px;
   font-size: 20px;
   font-weight: bold;
 }
 
-.myFooter div{
-  padding:5px;
+.myFooter div {
+  padding: 5px;
 }
 
-.space{
-    margin-right: 20px;
+.space {
+  margin-right: 5px;
 }
 
 .myFooter a {
