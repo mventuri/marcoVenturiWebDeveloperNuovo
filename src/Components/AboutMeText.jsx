@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import CardMedia from "@material-ui/core/CardMedia";
-import Typography from "@material-ui/core/Typography";
 import aboutMe from "../shared/aboutMe";
 import Expertise from "./Expertise";
 import ChipsArrayCert from "./ChipsCertification";
@@ -31,28 +30,20 @@ export default function AboutMeText() {
         <Paper className={classes.paper}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
-              <Typography>
-                <h1>{data.title}</h1>
-                <p>{data.body}</p>
-              </Typography>
+              <h1>{data.title}</h1>
+              <p>{data.body}</p>
             </Grid>
             <Grid item md={6}>
-              <Typography>
-                <h1>Top Skills</h1>
-              </Typography>
+              <h1>Top Skills</h1>
               <Expertise />
             </Grid>
             <Grid item md={6}>
-              <Typography>
-                <h1>Certifications</h1>
-              </Typography>
+              <h1>Certifications</h1>
               <ChipsArrayCert />
             </Grid>
             <Grid item xs={12}>
-              <Typography>
-                <h1>Countries I've been working or did business with</h1>
-                <i className="countries">(...in blue)</i>
-              </Typography>
+              <h1>Countries I've been working or did business with</h1>
+              <i className="countries">(...in blue)</i>
             </Grid>
             <Grid item={12}>
               <br />
