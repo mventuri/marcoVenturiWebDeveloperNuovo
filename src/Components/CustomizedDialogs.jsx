@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
@@ -6,7 +6,6 @@ import { withStyles } from "@material-ui/core/styles";
 import Dialog from "@material-ui/core/Dialog";
 import MuiDialogTitle from "@material-ui/core/DialogTitle";
 import MuiDialogContent from "@material-ui/core/DialogContent";
-import MuiDialogActions from "@material-ui/core/DialogActions";
 import CloseIcon from "@material-ui/icons/Close";
 
 const styles = theme => ({
@@ -24,6 +23,7 @@ const styles = theme => ({
 
 const DialogTitle = withStyles(styles)(props => {
   const { children, classes, onClose, ...other } = props;
+  console.log(props);
   return (
     <MuiDialogTitle disableTypography className={classes.root} {...other}>
       <Typography variant="h6">{children}</Typography>
@@ -46,35 +46,37 @@ const DialogContent = withStyles(theme => ({
   }
 }))(MuiDialogContent);
 
-const DialogActions = withStyles(theme => ({
-  root: {
-    margin: 0,
-    padding: theme.spacing(1)
-  }
-}))(MuiDialogActions);
-
-export default function CustomizedDialogs({ currentJob }) {
+function CustomizedDialogs({ currentJob }) {
   const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = props => {
-    setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   return (
     <div>
-      <Button color="primary" onClick={handleClickOpen}>
+      <Button color="primary" onClick={() => setOpen(!open)}>
         Details
       </Button>
       <Dialog
-        onClose={handleClose}
+        onClose={() => setOpen(!open)}
         aria-labelledby="customized-dialog-title"
         open={open}
       >
-        <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          {currentJob.company}
+        <DialogTitle
+          id="customized-dialog-title"
+          onClose={() => setOpen(!open)}
+        >
+          <div>
+            <img
+              src={currentJob.avatar}
+              alt=""
+              style={{
+                width: "40px",
+                height: "40px",
+                top: "1px",
+                position: "relative"
+              }}
+            />
+            <span style={{ position: "absolute", top: "23px", left: "70px" }}>
+              {currentJob.company}
+            </span>
+          </div>
         </DialogTitle>
         <DialogContent className="modalText" dividers>
           <Typography gutterBottom>{currentJob.jobDetails}</Typography>
@@ -83,3 +85,5 @@ export default function CustomizedDialogs({ currentJob }) {
     </div>
   );
 }
+
+export default CustomizedDialogs;

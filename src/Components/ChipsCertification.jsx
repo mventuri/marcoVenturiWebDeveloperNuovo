@@ -1,11 +1,12 @@
 import React from "react";
+import uuid from 'uuid';
 import { makeStyles } from "@material-ui/core/styles";
 import Chip from "@material-ui/core/Chip";
 import Paper from "@material-ui/core/Paper";
-import expertise from "../shared/expertise";
+import certifications from "../shared/certifications";
 import Avatar from "@material-ui/core/Avatar";
 
-const getData = expertise;
+const getData = certifications;
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
@@ -18,7 +19,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function ChipsArray() {
+export default function ChipsArrayCert() {
   const classes = useStyles();
   const [chipData] = React.useState(getData);
 
@@ -27,10 +28,10 @@ export default function ChipsArray() {
       {chipData.map(data => {
         return (
           <Chip
-            key={data.skills}
+            key={uuid()}
             avatar={<Avatar>{data.initial}</Avatar>}
-            label={data.skills}
-            color="secondary"
+            label={data.certification}
+            color="primary"
             className={classes.chip}
           />
         );
