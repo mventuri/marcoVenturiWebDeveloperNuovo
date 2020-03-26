@@ -1,5 +1,5 @@
 import React from "react";
-import uuid from 'uuid';
+import uuid from "uuid";
 import { makeStyles } from "@material-ui/core/styles";
 import Chip from "@material-ui/core/Chip";
 import Paper from "@material-ui/core/Paper";
