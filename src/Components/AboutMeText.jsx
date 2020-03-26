@@ -3,8 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import CardMedia from "@material-ui/core/CardMedia";
-import aboutMe from "../shared/aboutMe";
 import Expertise from "./Expertise";
+import AboutMeIntro from "./AboutMeIntro";
 import ChipsArrayCert from "./ChipsCertification";
 import mappa from "../Images/maps/mappa.png";
 
@@ -19,9 +19,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const data = aboutMe;
-
-export default function AboutMeText() {
+function AboutMeText() {
   const classes = useStyles();
 
   return (
@@ -30,8 +28,7 @@ export default function AboutMeText() {
         <Paper className={classes.paper}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
-              <h1>{data.title}</h1>
-              <p>{data.body}</p>
+              <AboutMeIntro />
             </Grid>
             <Grid item md={6}>
               <h1>Top Skills</h1>
@@ -55,3 +52,5 @@ export default function AboutMeText() {
     </div>
   );
 }
+
+export default AboutMeText;
