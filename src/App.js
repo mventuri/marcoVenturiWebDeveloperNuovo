@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Marco Venturi</h1>
-        <span>Portfolio website</span>
+        <span>Personal website</span>
       </header>
       <Grid container>
         <AboutMeText />
