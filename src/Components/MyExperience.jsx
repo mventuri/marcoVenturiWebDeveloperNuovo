@@ -28,9 +28,9 @@ export default function Experience() {
         <Paper className={classes.paper}>
           <Grid container>
             <Grid item xs={12}>
-              <Typography>
+              <span className="fuckTypography">
                 <h1>{data.title}</h1>
-              </Typography>
+              </span>
             </Grid>
           </Grid>
           <Grid container xs={12} spacing={2}>
