@@ -2,7 +2,6 @@ import React from "react";
 import aboutMe from "../shared/aboutMe";
 import Paper from "@material-ui/core/Paper";
 import { makeStyles } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core";
 import GithubDetails from "./GithubDetails";
 
 const data = aboutMe;
@@ -20,12 +19,12 @@ function AboutMeIntro() {
   return (
     <React.Fragment>
       <h1>{data.title}</h1>
-      <Typography>
+      <span className="fuckTypography">
         <Paper className={classes.root}>
           <p>{data.body}</p>
           <GithubDetails />
         </Paper>
-      </Typography>
+      </span>
     </React.Fragment>
   );
 }
